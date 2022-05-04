@@ -21,9 +21,9 @@ const IndexPage = () => (
           </h2>
         </div>
       </div>
-      <div className="checkout">
+      {/* <div className="checkout">
         <Checkout />
-      </div>
+      </div> */}
     </section>
   </Layout>
 )

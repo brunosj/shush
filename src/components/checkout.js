@@ -26,7 +26,7 @@ const Checkout = () => {
 
   return (
     <button disabled={loading} className="button">
-      <Link to="/tickets">BUY TICKETS</Link>
+      <Link to="/tickets">buy tickets</Link>
     </button>
   )
 }
