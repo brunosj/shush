@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import getStripe from '../utils/stripejs'
+import { Link } from 'gatsby'
 
 const buttonStyles = {
-  fontSize: '13px',
+  fontSize: '1.2rem',
   textAlign: 'center',
   color: '#000',
   padding: '12px 60px',
-  boxShadow: '2px 5px 10px rgba(0,0,0,.1)',
-  backgroundColor: 'rgb(255, 178, 56)',
+  backgroundColor: '#00f5d4',
   borderRadius: '6px',
-  letterSpacing: '1.5px',
+  border: '#00f5d4',
+  letterSpacing: '',
+  cursor: 'pointer',
+  textTransform: 'lowercase',
+  fontWeight: 'bold',
 }
 
 const buttonDisabledStyles = {
@@ -20,33 +24,9 @@ const buttonDisabledStyles = {
 const Checkout = () => {
   const [loading, setLoading] = useState(false)
 
-  const redirectToCheckout = async event => {
-    event.preventDefault()
-    setLoading(true)
-
-    const stripe = await getStripe()
-    const { error } = await stripe.redirectToCheckout({
-      mode: 'payment',
-      lineItems: [{ price: process.env.GATSBY_BUTTON_PRICE_ID, quantity: 1 }],
-      successUrl: `${window.location.origin}/page-2/`,
-      cancelUrl: `${window.location.origin}/`,
-    })
-
-    if (error) {
-      console.warn('Error:', error)
-      setLoading(false)
-    }
-  }
-
   return (
-    <button
-      disabled={loading}
-      style={
-        loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
-      }
-      onClick={redirectToCheckout}
-    >
-      BUY MY BOOK
+    <button disabled={loading} className="button">
+      <Link to="/tickets">BUY TICKETS</Link>
     </button>
   )
 }

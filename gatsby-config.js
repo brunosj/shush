@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby E-Commerce Starter`,
-    description: `Accept payments in your Gatsby site using Stripe Checkout.`,
-    author: `@thorwebdev`,
+    title: `shush.dance`,
+    description: `freedom through movement`,
+    author: `@brunosj`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

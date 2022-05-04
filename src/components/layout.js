@@ -4,9 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
-import stripeLogo from '../images/powered_by_stripe.svg'
-
-import '@stripe/stripe-js' // https://github.com/stripe/stripe-js#import-as-a-side-effect
+import '@stripe/stripe-js'
+import '../styles/styles.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,30 +18,25 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <div>
           {children}
-          <footer>
-            <div>
-              Built by <a href="https://twitter.com/thorwebdev">Thor</a> with{' '}
-              <a href="https://www.gatsbyjs.org">Gatsby</a> | View{' '}
-              <a href="https://github.com/gatsbyjs/gatsby/tree/master/examples/ecommerce-tutorial-with-stripe">
-                source
-              </a>
-            </div>
-            <div>
-              <a href="https://stripe.com">
-                <img src={stripeLogo} alt="Payments powered by Stripe" />
-              </a>
+          <footer className="footer">
+            <div className="telegramChannel">
+              <h5>
+                Join our{' '}
+                <a
+                  href="https://t.me/+boQVv-B5kY42NzI6"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="telegramLink"
+                >
+                  Telegram channel
+                </a>{' '}
+                for more info
+              </h5>
             </div>
           </footer>
         </div>
