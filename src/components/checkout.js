@@ -25,9 +25,16 @@ const Checkout = () => {
   const [loading, setLoading] = useState(false)
 
   return (
-    <button disabled={loading} className="button">
-      <Link to="/tickets">buy tickets</Link>
-    </button>
+    <div>
+      <button disabled={loading} className="button">
+        <Link to="/tickets">buy tickets</Link>
+      </button>
+      <div className="ticketInfo">
+        Presale 8€
+        <br />
+        Door 12€
+      </div>
+    </div>
   )
 }
 

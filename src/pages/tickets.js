@@ -27,6 +27,11 @@ const IndexPage = () => (
           <CheckoutFourTickets />
           <CheckoutFiveTickets />
         </div>
+        <div className="ticketInfo">
+          Presale 8€
+          <br />
+          Door 12€
+        </div>
       </div>
     </section>
   </Layout>

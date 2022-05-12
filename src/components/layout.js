@@ -36,6 +36,16 @@ const Layout = ({ children }) => (
                   Telegram channel
                 </a>{' '}
                 for more info
+                <br />
+                <a
+                  href="https://t.me/+boQVv-B5kY42NzI6"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="telegramLink"
+                >
+                  Get in touch
+                </a>{' '}
+                for any questions or info about shush
               </h5>
             </div>
           </footer>
