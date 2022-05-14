@@ -38,14 +38,14 @@ const Layout = ({ children }) => (
                 for more info
                 <br />
                 <a
-                  href="https://t.me/+boQVv-B5kY42NzI6"
+                  href="mailto:hello@shush.dance"
                   target="_blank"
                   rel="noreferrer"
                   className="telegramLink"
                 >
                   Get in touch
                 </a>{' '}
-                for any questions or info about shush
+                for any questions
               </h5>
             </div>
           </footer>

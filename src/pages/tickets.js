@@ -16,7 +16,7 @@ const IndexPage = () => (
     <SEO title="tickets" />
     <section>
       <div class="title">
-        <h1>shush!</h1>
+        <h1 class="text_shadows">shush!</h1>
       </div>
       <div class="tickets">
         <h3>select number of tickets</h3>

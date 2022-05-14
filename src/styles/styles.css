@@ -1,3 +1,28 @@
+@font-face {
+  font-family: GoodGirl;
+  src: url('../fonts/GoodGirlTrial-Regular.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GoodGirlCondensed;
+  src: url('../fonts/GoodGirlTrial-Condensed.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Brasley;
+  src: url('../fonts/Brasley-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  font-family: Brasley;
+}
+
 html {
   min-height: 100%;
   -webkit-background-size: cover;
@@ -5,17 +30,18 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background: -webkit-linear-gradient(#000000, #202020);
-  background: -moz-linear-gradient(#000000, #202020);
-  background: -ms-linear-gradient(#000000, #202020);
-  background: -o-linear-gradient(#000000, #202020);
-  background: linear-gradient(#000000, #202020);
+  background: -webkit-linear-gradient(#999797, #000000);
+  background: -moz-linear-gradient(#999797, #000000);
+  background: -ms-linear-gradient(#999797, #000000);
+  background: -o-linear-gradient(#999797, #000000);
+  background: linear-gradient(#999797, #000000);
   scroll-behavior: smooth;
+  font-family: Brasley;
 }
+
 body {
-  /* margin: 80px; */
   color: white;
-  font-family: 'Space Mono';
+  font-family: Brasley;
 }
 
 section {
@@ -34,17 +60,18 @@ section {
 h1 {
   font-size: 15rem;
   width: 100%;
-  line-height: 0em;
-  color: #00f5d4;
+  /* letter-spacing: 1rem; */
+  color: white;
   text-transform: lowercase;
+  font-family: GoodGirlCondensed;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.2em;
   font-weight: 600;
   margin: 0;
-  /* color: #d4dcff; */
+  font-family: Brasley;
 }
 
 h3 {
@@ -63,14 +90,9 @@ h5 {
   line-height: 1.5rem;
   font-size: 1rem;
 }
+
 a {
   text-decoration: none;
-}
-
-span {
-  background-image: linear-gradient(#00f5d4, #00f5d4);
-  color: black;
-  padding: 0rem 1rem;
 }
 
 ul {
@@ -79,7 +101,7 @@ ul {
 
 p {
   color: black;
-  background-color: #00f5d4;
+  background-color: white;
   padding: 0em 1em;
   font-size: 1.5rem;
 }
@@ -87,16 +109,37 @@ p {
 footer {
   width: 100%;
   text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+
+.eventInfo {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin: 0;
+  font-family: Brasley;
+}
+
+.date {
+  background-image: linear-gradient(white, white);
+  color: black;
+  padding: 0.4rem 1rem 0.1rem 1rem;
+}
+
+.label {
+  font-size: 2rem;
+  color: gray;
 }
 
 .button {
   font-size: 1.2rem;
   text-align: center;
-  color: #000;
+  color: white;
   padding: 12px 60px;
-  background-color: #00f5d4;
+  background-color: #3f46ce;
   border-radius: 6px;
-  border: #00f5d4;
+  border: white;
   letter-spacing: '';
   cursor: pointer;
   text-transform: lowercase;
@@ -106,6 +149,7 @@ footer {
 .button:hover {
   padding: 12px 60px;
   background-color: white;
+  color: black;
   border-radius: 6px;
   border: white;
   letter-spacing: '';
@@ -115,10 +159,24 @@ footer {
   transition: all 0.1s ease-in-out;
 }
 
+.buyTickets {
+  color: white;
+  width: 100%;
+}
+
+.buyTickets:hover {
+  color: black;
+}
+
+.buyTickets a {
+  color: black;
+}
+
 .title {
   display: flex;
   align-items: center;
   height: 45vh;
+  padding-left: 1rem;
 }
 
 .telegramChannel {
@@ -126,7 +184,7 @@ footer {
 }
 
 .telegramLink {
-  color: #00f5d4;
+  color: #3f46ce;
   text-decoration: none;
   /* background-image: linear-gradient(black, black); */
   background-size: 100% 0.1em;
@@ -135,6 +193,7 @@ footer {
   transition: all 0.1s ease-in;
   background-color: transparent;
   display: inline-block;
+  font-weight: bold;
 }
 
 .telegramLink:hover {
@@ -151,14 +210,20 @@ footer {
   margin-bottom: 2rem;
 }
 
+.line-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .tickets {
   margin: auto;
 }
 
 .ticketInfo {
-  padding-top: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 /* 
@@ -216,17 +281,162 @@ footer {
   gap: 2rem;
 }
 
-.checkout a {
-  color: black;
+:root {
+  --color-primary: white;
+  --color-secondary: #3f46ce;
+  --color-tertiary: #3f46ce;
+  --color-quaternary: #3f46ce;
+  --color-quinary: #3f46ce;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
 }
 
-.checkout a:hover {
-  color: black;
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  -webkit-animation: shadows 3.5s ease-in infinite, move 3.5s ease-in infinite;
+  animation: shadows 3.5s ease-in infinite, move 3.5s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@-webkit-keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @media screen and (max-width: 450px) {
   h1 {
-    font-size: 5rem;
+    font-size: 10rem;
   }
 
   h2 {
@@ -260,7 +470,19 @@ footer {
     font-size: 0.5rem;
   }
 
+  .title {
+    height: 30vh;
+  }
   .telegramChannel {
     margin-top: 2rem;
+  }
+
+  .line-up {
+    display: block;
+  }
+
+  .eventInfo {
+    padding-top: 2rem;
+    font-size: 1.5rem;
   }
 }
