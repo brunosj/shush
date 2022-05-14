@@ -30,11 +30,11 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background: -webkit-linear-gradient(#999797, #000000);
-  background: -moz-linear-gradient(#999797, #000000);
-  background: -ms-linear-gradient(#999797, #000000);
-  background: -o-linear-gradient(#999797, #000000);
-  background: linear-gradient(#999797, #000000);
+  background: -webkit-linear-gradient(#000000, #000000);
+  background: -moz-linear-gradient(#000000, #000000);
+  background: -ms-linear-gradient(#000000, #000000);
+  background: -o-linear-gradient(#000000, #000000);
+  background: linear-gradient(#000000, #000000);
   scroll-behavior: smooth;
   font-family: Brasley;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 section {
-  text-align: center;
+  /* text-align: center; */
   padding-bottom: 1rem;
   min-height: 90vh;
 }
@@ -61,9 +61,9 @@ h1 {
   font-size: 15rem;
   width: 100%;
   /* letter-spacing: 1rem; */
-  color: white;
+  color: black;
   text-transform: lowercase;
-  font-family: GoodGirlCondensed;
+  font-family: GoodGirl;
 }
 
 h2 {
@@ -118,12 +118,14 @@ footer {
   font-weight: 600;
   margin: 0;
   font-family: Brasley;
+  text-transform: lowercase;
+  text-align: right;
 }
 
 .date {
   background-image: linear-gradient(white, white);
   color: black;
-  padding: 0.4rem 1rem 0.1rem 1rem;
+  padding: 0.4rem 0rem 0.1rem 0rem;
 }
 
 .label {
@@ -184,16 +186,17 @@ footer {
 }
 
 .telegramLink {
-  color: #3f46ce;
+  color: white;
   text-decoration: none;
-  /* background-image: linear-gradient(black, black); */
-  background-size: 100% 0.1em;
+  background-image: linear-gradient(#3f46ce, #3f46ce);
+  background-size: 100% 1.5em;
   background-position: 0 90%;
   background-repeat: no-repeat;
   transition: all 0.1s ease-in;
   background-color: transparent;
   display: inline-block;
   font-weight: bold;
+  padding: 0rem 0.2rem 0rem 0.2rem;
 }
 
 .telegramLink:hover {
@@ -218,12 +221,15 @@ footer {
 
 .tickets {
   margin: auto;
+  text-align: center;
 }
 
 .ticketInfo {
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin: 0;
+  font-family: Brasley;
 }
 
 /* 
@@ -283,10 +289,10 @@ footer {
 
 :root {
   --color-primary: white;
-  --color-secondary: #3f46ce;
-  --color-tertiary: #3f46ce;
-  --color-quaternary: #3f46ce;
-  --color-quinary: #3f46ce;
+  --color-secondary: white;
+  --color-tertiary: white;
+  --color-quaternary: white;
+  --color-quinary: white;
   /*
   --color-primary: #5192ED;
   --color-secondary: #69A1F0;
@@ -297,14 +303,14 @@ footer {
 }
 
 .text_shadows {
-  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
-    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  /* text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary); */
   font-weight: 400;
   text-align: center;
   margin: 0;
   color: var(--color-primary);
-  -webkit-animation: shadows 3.5s ease-in infinite, move 3.5s ease-in infinite;
-  animation: shadows 3.5s ease-in infinite, move 3.5s ease-in infinite;
+  /* -webkit-animation: shadows 2s ease-in infinite, move 2s ease-in infinite;
+  animation: shadows 2s ease-in infinite, move 2s ease-in infinite; */
   letter-spacing: 0.4rem;
 }
 
@@ -479,10 +485,21 @@ footer {
 
   .line-up {
     display: block;
+    padding-left: 1rem;
+  }
+
+  .ticketInfo {
+    padding-top: 1rem;
+    line-height: 1.5rem;
   }
 
   .eventInfo {
     padding-top: 2rem;
     font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  .eventDetails {
+    padding-bottom: 1rem;
   }
 }

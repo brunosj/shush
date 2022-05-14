@@ -19,7 +19,7 @@ const IndexPage = () => (
         <h1 class="text_shadows">shush!</h1>
       </div>
       <div class="tickets">
-        <h3>select number of tickets</h3>
+        <h2>select number of tickets</h2>
         <div className="checkout">
           <CheckoutOneTicket />
           <CheckoutTwoTickets />
@@ -28,9 +28,11 @@ const IndexPage = () => (
           <CheckoutFiveTickets />
         </div>
         <div className="ticketInfo">
-          Presale 8€
-          <br />
-          Door 12€
+          <h2>
+            presale 8€
+            <br />
+            door 12€
+          </h2>
         </div>
       </div>
     </section>

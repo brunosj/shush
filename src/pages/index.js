@@ -21,7 +21,7 @@ const IndexPage = () => (
             </h2>
             <h2>d'monk</h2>
             <h2>emeline</h2>
-            <h2>harvey dweller</h2>
+            <h2>harvey dweller (live)</h2>
             <h2>ken okuda</h2>
             <h2>
               orlando rosé <span className="label"> (pinewax)</span>
@@ -29,16 +29,16 @@ const IndexPage = () => (
           </div>
           <div className="eventInfo">
             {' '}
-            <div>
+            <div className="eventDetails">
               U+S Pankow <br /> <span className="date">11 june 2022</span>
               <br />
-              10pm-late
+              10pm till late
+            </div>
+            <div className="">
+              <Checkout />
             </div>
           </div>
         </div>
-      </div>
-      <div className="">
-        <Checkout />
       </div>
     </section>
   </Layout>
