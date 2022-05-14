@@ -34,9 +34,9 @@ const IndexPage = () => (
               <br />
               10pm till late
             </div>
-            <div className="">
+            {/* <div className="">
               <Checkout />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
