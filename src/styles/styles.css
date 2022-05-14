@@ -47,7 +47,7 @@ body {
 section {
   text-align: center;
   padding-bottom: 1rem;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 :target:before {
@@ -109,8 +109,7 @@ p {
 footer {
   width: 100%;
   text-align: center;
-  bottom: 0;
-  position: absolute;
+  margin-top: auto;
 }
 
 .eventInfo {
@@ -175,8 +174,9 @@ footer {
 .title {
   display: flex;
   align-items: center;
-  height: 45vh;
+  height: 40vh;
   padding-left: 1rem;
+  padding-top: 2rem;
 }
 
 .telegramChannel {
