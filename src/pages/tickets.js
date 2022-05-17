@@ -15,9 +15,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="tickets" />
     <section>
-      <div class="title">
-        <h1 class="text_shadows">shush!</h1>
-      </div>
+      <Link to="/" className="title-link">
+        <div class="title">
+          <h1 class="text_shadows">shush!</h1>
+        </div>
+      </Link>
+
       <div class="tickets">
         <h2>select number of tickets</h2>
         <div className="checkout">

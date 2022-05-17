@@ -10,9 +10,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="shush" />
     <section>
-      <div class="title">
-        <h1 class="text_shadows">shush!</h1>
-      </div>
+      <Link to="/" className="title-link">
+        <div class="title">
+          <h1 class="text_shadows">shush!</h1>
+        </div>
+      </Link>
       <div class="subtitle">
         <div className="line-up">
           <div>
