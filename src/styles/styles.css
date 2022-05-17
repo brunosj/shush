@@ -446,7 +446,7 @@ footer {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -477,7 +477,7 @@ footer {
   }
 
   .title {
-    height: 30vh;
+    height: 35vh;
   }
   .telegramChannel {
     margin-top: 2rem;
