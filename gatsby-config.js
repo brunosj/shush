@@ -4,9 +4,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `shush.dance`,
-    description: `freedom through movement`,
-    author: `@brunosj`,
+    siteTitle: `shush!`,
+    siteDescription: `unity through movement & vibration`,
+    siteUrl: 'https://shush.dance',
+    siteImage: '/images/shush.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

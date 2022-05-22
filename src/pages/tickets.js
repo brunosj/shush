@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
-import SEO from '../components/seo'
+import { Seo } from '../components/seo'
 import Checkout from '../components/checkout'
 import CheckoutOneTicket from '../components/checkout/checkoutOneTicket'
 import CheckoutTwoTickets from '../components/checkout/checkoutTwoTickets'
@@ -11,9 +11,9 @@ import CheckoutThreeTickets from '../components/checkout/checkoutThreeTickets'
 import CheckoutFourTickets from '../components/checkout/checkoutFourTickets'
 import CheckoutFiveTickets from '../components/checkout/checkoutFiveTickets'
 
-const IndexPage = () => (
+const Tickets = () => (
   <Layout>
-    <SEO title="tickets" />
+    <Seo title="tickets" />
     <section>
       <Link to="/" className="title-link">
         <div class="title">
@@ -42,4 +42,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default Tickets
