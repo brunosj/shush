@@ -7,7 +7,7 @@ module.exports = {
     siteTitle: `shush!`,
     siteDescription: `unity through movement & vibration`,
     siteUrl: 'https://shush.dance',
-    siteImage: '/images/shush.png',
+    siteImage: '/shush.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `shush.dance`,
+        short_name: `shush`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
