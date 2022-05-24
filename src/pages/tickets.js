@@ -13,7 +13,7 @@ import CheckoutFiveTickets from '../components/checkout/checkoutFiveTickets'
 
 const Tickets = () => (
   <Layout>
-    <Seo title="tickets" />
+    <Seo title="tickets" description="get your tickets for our events" />
     <section>
       <Link to="/" className="title-link">
         <div class="title">
