@@ -53,6 +53,7 @@ export function Seo({
       <meta property="og:url" content={seo.url} />
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.image} />
+      <meta property="og:image:secure_url" content={seo.image} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />

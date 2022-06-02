@@ -287,6 +287,10 @@ footer {
   gap: 2rem;
 }
 
+.earlyBird {
+  text-decoration: line-through;
+}
+
 :root {
   --color-primary: white;
   --color-secondary: white;

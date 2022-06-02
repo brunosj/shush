@@ -9,8 +9,8 @@ const Checkout = () => {
         buy tickets
       </Link>
       <div className="ticketInfo">
-        Presale 8€
-        <br />
+        <div className="earlyBird">early bird 8€</div>
+        presale 10€ <br />
         Door 12€
       </div>
     </div>

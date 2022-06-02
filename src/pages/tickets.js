@@ -32,7 +32,8 @@ const Tickets = () => (
         </div>
         <div className="ticketInfo">
           <h2>
-            presale 8€
+            <div className="earlyBird">early bird 8€</div>
+            presale 10€
             <br />
             door 12€
           </h2>
