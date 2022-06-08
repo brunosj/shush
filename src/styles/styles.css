@@ -506,4 +506,8 @@ footer {
   .eventDetails {
     padding-bottom: 1rem;
   }
+
+  .label {
+    font-size: 1.2rem;
+  }
 }

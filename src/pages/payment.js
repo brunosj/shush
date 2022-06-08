@@ -14,7 +14,11 @@ const SecondPage = () => (
         </div>
       </Link>
       <div class="tickets">
-        <h2>Thank you! You will receive an email with your tickets</h2>
+        <h2>
+          Thank you!
+          <br />
+          <br /> The payment confirmation will be your ticket for the event
+        </h2>
       </div>
     </section>
   </Layout>
