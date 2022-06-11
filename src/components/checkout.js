@@ -5,12 +5,12 @@ import { Link } from 'gatsby'
 const Checkout = () => {
   return (
     <div>
-      <Link className="button" to="/tickets">
+      {/* <Link className="button" to="/tickets">
         buy tickets
-      </Link>
+      </Link> */}
       <div className="ticketInfo">
         <div className="earlyBird">early bird 8€</div>
-        presale 10€ <br />
+        <div className="earlyBird">presale 10€</div>
         Door 12€
       </div>
     </div>

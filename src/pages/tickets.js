@@ -22,19 +22,18 @@ const Tickets = () => (
       </Link>
 
       <div class="tickets">
-        <h2>select number of tickets</h2>
-        <div className="checkout">
+        <h2>presale is soldout</h2>
+        {/* <div className="checkout">
           <CheckoutOneTicket />
           <CheckoutTwoTickets />
           <CheckoutThreeTickets />
           <CheckoutFourTickets />
           <CheckoutFiveTickets />
-        </div>
+        </div> */}
         <div className="ticketInfo">
           <h2>
             <div className="earlyBird">early bird 8€</div>
-            presale 10€
-            <br />
+            <div className="earlyBird">presale 10€</div>
             door 12€
           </h2>
         </div>
