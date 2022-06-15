@@ -14,6 +14,7 @@ const IndexPage = () => (
         </div>
       </Link>
       <div class="subtitle">
+        <p className="nextEvent">next event announced soon</p>
         <div className="line-up">
           <div>
             <h2>

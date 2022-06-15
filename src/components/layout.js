@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
           <footer className="footer">
             <div className="telegramChannel">
               <h5>
-                location to be shared on 11 june on{' '}
+                stay tuned on{' '}
                 <a
                   href="https://t.me/+boQVv-B5kY42NzI6"
                   target="_blank"

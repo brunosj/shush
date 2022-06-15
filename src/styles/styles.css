@@ -165,6 +165,14 @@ footer {
   width: 100%;
 }
 
+.nextEvent {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3f46ce;
+  color: white;
+  font-weight: 600;
+}
+
 .buyTickets:hover {
   color: black;
 }
@@ -509,5 +517,9 @@ footer {
 
   .label {
     font-size: 1.2rem;
+  }
+
+  .section {
+    padding-bottom: 0rem;
   }
 }
