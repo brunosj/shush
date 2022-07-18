@@ -7,7 +7,7 @@ module.exports = {
     siteTitle: `shush!`,
     siteDescription: `unity through movement & vibration`,
     siteUrl: 'https://shush.dance',
-    siteImage: '/shush_pink.jpg',
+    siteImage: '/shush_event2.jpg',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

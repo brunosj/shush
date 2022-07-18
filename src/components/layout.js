@@ -52,7 +52,7 @@ const Layout = ({ children }) => (
                   className="telegramLink"
                 >
                   get in touch
-                </a>{' '}
+                </a>
                 for any questions
               </h5>
             </div>
