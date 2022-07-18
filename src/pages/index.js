@@ -3,10 +3,17 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Checkout from '../components/checkout'
 import { Seo } from '../components/seo'
+import Flyer from '../images/shush_event2.jpg'
+import FlyerMobile from '../images/shush_event2_mobile.jpg'
 
 const IndexPage = () => (
   <Layout>
     <Seo title="shush!" description="next event on 11 june 2022 in Berlin" />
+
+    <div>
+      <img src={Flyer} className="flyer" />
+      <img src={FlyerMobile} className="flyerMobile" />
+    </div>
     <section>
       <Link to="/" className="title-link">
         <div class="title">
@@ -14,7 +21,7 @@ const IndexPage = () => (
         </div>
       </Link>
       <div class="subtitle">
-        <p className="nextEvent">next event announced soon</p>
+        {/* <p className="nextEvent">next event announced soon</p> */}
         <div className="line-up">
           <div>
             <h2>

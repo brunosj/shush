@@ -299,6 +299,14 @@ footer {
   text-decoration: line-through;
 }
 
+.flyer {
+  width: 100%;
+}
+
+.flyerMobile {
+  display: none;
+}
+
 :root {
   --color-primary: white;
   --color-secondary: white;
@@ -521,5 +529,12 @@ footer {
 
   .section {
     padding-bottom: 0rem;
+  }
+
+  .flyer {
+    display: none;
+  }
+  .flyerMobile {
+    display: block;
   }
 }
