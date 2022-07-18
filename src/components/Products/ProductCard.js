@@ -43,7 +43,7 @@ const formatPrice = (amount, currency) => {
 const ProductCard = ({ product }) => {
   const [loading, setLoading] = useState(false)
 
-  const handleSubmit = async event => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
     setLoading(true)
 
@@ -52,7 +52,7 @@ const ProductCard = ({ product }) => {
     const { error } = await stripe.redirectToCheckout({
       mode: 'payment',
       lineItems: [{ price, quantity: 1 }],
-      successUrl: `${window.location.origin}/page-2/`,
+      successUrl: `${window.location.origin}/payment/`,
       cancelUrl: `${window.location.origin}/advanced`,
     })
 
@@ -72,7 +72,7 @@ const ProductCard = ({ product }) => {
           <label>
             Price{' '}
             <select name="priceSelect">
-              {product.prices.map(price => (
+              {product.prices.map((price) => (
                 <option key={price.id} value={price.id}>
                   {formatPrice(price.unit_amount, price.currency)}
                 </option>

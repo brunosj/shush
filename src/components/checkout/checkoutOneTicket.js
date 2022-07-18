@@ -31,7 +31,7 @@ const CheckoutOneTicket = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: 'payment',
       lineItems: [{ price: process.env.GATSBY_BUTTON_PRICE_ID, quantity: 1 }],
-      successUrl: `${window.location.origin}/page-2/`,
+      successUrl: `${window.location.origin}/payment/`,
       cancelUrl: `${window.location.origin}/`,
     })
 

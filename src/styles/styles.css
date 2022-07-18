@@ -1,3 +1,28 @@
+@font-face {
+  font-family: GoodGirl;
+  src: url('../fonts/GoodGirlTrial-Regular.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GoodGirlCondensed;
+  src: url('../fonts/GoodGirlTrial-Condensed.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Brasley;
+  src: url('../fonts/Brasley-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  font-family: Brasley;
+}
+
 html {
   min-height: 100%;
   -webkit-background-size: cover;
@@ -5,23 +30,24 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background: -webkit-linear-gradient(#000000, #202020);
-  background: -moz-linear-gradient(#000000, #202020);
-  background: -ms-linear-gradient(#000000, #202020);
-  background: -o-linear-gradient(#000000, #202020);
-  background: linear-gradient(#000000, #202020);
+  background: -webkit-linear-gradient(#000000, #000000);
+  background: -moz-linear-gradient(#000000, #000000);
+  background: -ms-linear-gradient(#000000, #000000);
+  background: -o-linear-gradient(#000000, #000000);
+  background: linear-gradient(#000000, #000000);
   scroll-behavior: smooth;
+  font-family: Brasley;
 }
+
 body {
-  /* margin: 80px; */
   color: white;
-  font-family: 'Space Mono';
+  font-family: Brasley;
 }
 
 section {
-  text-align: center;
+  /* text-align: center; */
   padding-bottom: 1rem;
-  min-height: 85vh;
+  min-height: 90vh;
 }
 
 :target:before {
@@ -34,17 +60,18 @@ section {
 h1 {
   font-size: 15rem;
   width: 100%;
-  line-height: 0em;
-  color: #00f5d4;
+  /* letter-spacing: 1rem; */
+  color: black;
   text-transform: lowercase;
+  font-family: GoodGirl;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.2em;
   font-weight: 600;
   margin: 0;
-  /* color: #d4dcff; */
+  font-family: Brasley;
 }
 
 h3 {
@@ -61,16 +88,11 @@ h4 {
 
 h5 {
   line-height: 1.5rem;
-  font-size: 1.2rem;
-}
-a {
-  text-decoration: none;
+  font-size: 1rem;
 }
 
-span {
-  background-image: linear-gradient(#00f5d4, #00f5d4);
-  color: black;
-  padding: 0rem 1rem;
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -79,7 +101,7 @@ ul {
 
 p {
   color: black;
-  background-color: #00f5d4;
+  background-color: white;
   padding: 0em 1em;
   font-size: 1.5rem;
 }
@@ -87,16 +109,38 @@ p {
 footer {
   width: 100%;
   text-align: center;
+  margin-top: auto;
+}
+
+.eventInfo {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin: 0;
+  font-family: Brasley;
+  text-transform: lowercase;
+  text-align: right;
+}
+
+.date {
+  background-image: linear-gradient(white, white);
+  color: black;
+  padding: 0.4rem 0rem 0.1rem 0rem;
+}
+
+.label {
+  font-size: 2rem;
+  color: gray;
 }
 
 .button {
   font-size: 1.2rem;
   text-align: center;
-  color: #000;
+  color: white;
   padding: 12px 60px;
-  background-color: #00f5d4;
+  background-color: #3f46ce;
   border-radius: 6px;
-  border: #00f5d4;
+  border: white;
   letter-spacing: '';
   cursor: pointer;
   text-transform: lowercase;
@@ -106,6 +150,7 @@ footer {
 .button:hover {
   padding: 12px 60px;
   background-color: white;
+  color: black;
   border-radius: 6px;
   border: white;
   letter-spacing: '';
@@ -115,26 +160,51 @@ footer {
   transition: all 0.1s ease-in-out;
 }
 
+.buyTickets {
+  color: white;
+  width: 100%;
+}
+
+.nextEvent {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3f46ce;
+  color: white;
+  font-weight: 600;
+}
+
+.buyTickets:hover {
+  color: black;
+}
+
+.buyTickets a {
+  color: black;
+}
+
 .title {
   display: flex;
   align-items: center;
-  height: 45vh;
+  height: 40vh;
+  padding-left: 1rem;
+  padding-top: 2rem;
 }
 
 .telegramChannel {
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 
 .telegramLink {
-  color: #00f5d4;
+  color: white;
   text-decoration: none;
-  /* background-image: linear-gradient(black, black); */
-  background-size: 100% 0.1em;
+  background-image: linear-gradient(#3f46ce, #3f46ce);
+  background-size: 100% 1.5em;
   background-position: 0 90%;
   background-repeat: no-repeat;
   transition: all 0.1s ease-in;
   background-color: transparent;
   display: inline-block;
+  font-weight: bold;
+  padding: 0rem 0.2rem 0rem 0.2rem;
 }
 
 .telegramLink:hover {
@@ -151,8 +221,23 @@ footer {
   margin-bottom: 2rem;
 }
 
+.line-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .tickets {
   margin: auto;
+  text-align: center;
+}
+
+.ticketInfo {
+  padding-top: 1rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin: 0;
+  font-family: Brasley;
 }
 
 /* 
@@ -210,21 +295,178 @@ footer {
   gap: 2rem;
 }
 
-.checkout a {
-  color: black;
+.earlyBird {
+  text-decoration: line-through;
 }
 
-.checkout a:hover {
-  color: black;
+.flyer {
+  width: 100%;
+}
+
+.flyerMobile {
+  display: none;
+}
+
+:root {
+  --color-primary: white;
+  --color-secondary: white;
+  --color-tertiary: white;
+  --color-quaternary: white;
+  --color-quinary: white;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+
+.text_shadows {
+  /* text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary); */
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  /* -webkit-animation: shadows 2s ease-in infinite, move 2s ease-in infinite;
+  animation: shadows 2s ease-in infinite, move 2s ease-in infinite; */
+  letter-spacing: 0.4rem;
+}
+
+@-webkit-keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @media screen and (max-width: 450px) {
   h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -254,7 +496,45 @@ footer {
     font-size: 0.5rem;
   }
 
+  .title {
+    height: 35vh;
+  }
   .telegramChannel {
     margin-top: 2rem;
+  }
+
+  .line-up {
+    display: block;
+    padding-left: 1rem;
+  }
+
+  .ticketInfo {
+    padding-top: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .eventInfo {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  .eventDetails {
+    padding-bottom: 1rem;
+  }
+
+  .label {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding-bottom: 0rem;
+  }
+
+  .flyer {
+    display: none;
+  }
+  .flyerMobile {
+    display: block;
   }
 }

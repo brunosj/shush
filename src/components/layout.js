@@ -26,16 +26,34 @@ const Layout = ({ children }) => (
           <footer className="footer">
             <div className="telegramChannel">
               <h5>
-                Join our{' '}
+                stay tuned on{' '}
                 <a
                   href="https://t.me/+boQVv-B5kY42NzI6"
                   target="_blank"
                   rel="noreferrer"
                   className="telegramLink"
                 >
-                  Telegram channel
+                  telegram
                 </a>{' '}
-                for more info
+                and{' '}
+                <a
+                  href="https://www.instagram.com/shush.dance/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="telegramLink"
+                >
+                  instagram
+                </a>
+                <br />
+                <a
+                  href="mailto:hello@shush.dance"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="telegramLink"
+                >
+                  get in touch
+                </a>{' '}
+                for any questions
               </h5>
             </div>
           </footer>
