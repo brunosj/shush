@@ -8,7 +8,10 @@ import FlyerMobile from '../images/shush_event2_mobile.jpg'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="shush!" description="next event on 23 july 2022 in Berlin" />
+    <Seo
+      title="shush!"
+      description="shush! on the block! 23.07.2022 - Berlin"
+    />
 
     <div>
       <img src={Flyer} className="flyer" />
